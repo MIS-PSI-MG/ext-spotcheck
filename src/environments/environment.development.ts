@@ -2,11 +2,12 @@ export const environment = {
   production: false,
   useEmulator: true,
   firebase: {
-    apiKey: 'lol',
-    authDomain: 'localhost',
-    projectId: 'ext-spotcheck',
-    storageBucket: 'ext-spotcheck.appspot.com',
-    messagingSenderId: '1234567890',
-    appId: '1:1234567890:web:1234567890123456789012',
+    apiKey: 'AIzaSyCtEjL51PKyhviW1OfEg6E5w-l8tI32dz4',
+    authDomain: 'spotcheck-gc7.firebaseapp.com',
+    projectId: 'spotcheck-gc7',
+    storageBucket: 'spotcheck-gc7.firebasestorage.app',
+    messagingSenderId: '726322751671',
+    appId: '1:726322751671:web:dac5ca6acf449c7d1f8532',
+    measurementId: 'G-TFG0MHF7D8',
   },
 };

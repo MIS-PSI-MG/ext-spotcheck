@@ -1,13 +1,13 @@
 export const environment = {
-  production: true,
+  production: false,
   useEmulator: false,
   firebase: {
-    apiKey: 'AIzaSyCYPWsM0pQ9wDH4PesiEdidEgXqvN3V3bo',
-    authDomain: 'mis-inov-1.firebaseapp.com',
-    projectId: 'mis-inov-1',
-    storageBucket: 'mis-inov-1.firebasestorage.app',
-    messagingSenderId: '81912050519',
-    appId: '1:81912050519:web:e146f2f47a3032650a0412',
-    measurementId: 'G-DM6ET9JD04',
+    apiKey: 'AIzaSyCtEjL51PKyhviW1OfEg6E5w-l8tI32dz4',
+    authDomain: 'spotcheck-gc7.firebaseapp.com',
+    projectId: 'spotcheck-gc7',
+    storageBucket: 'spotcheck-gc7.firebasestorage.app',
+    messagingSenderId: '726322751671',
+    appId: '1:726322751671:web:dac5ca6acf449c7d1f8532',
+    measurementId: 'G-TFG0MHF7D8',
   },
 };

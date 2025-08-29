@@ -10,9 +10,13 @@ export class SptFb {
   firestore = inject(Firestore);
   SpotcheckCollection = collection(this.firestore, 'spotchecks');
 
-  getSpotchecks(): Observable<ChecklistBase[]> {
+  getSpotchecks(): Observable<any> {
     return collectionData(this.SpotcheckCollection, {
       idField: 'id',
-    }) as Observable<ChecklistBase[]>;
+    });
+
+    // return collectionData(this.SpotcheckCollection, {
+    //   idField: 'id',
+    // }) as Observable<ChecklistBase[]>;
   }
 }

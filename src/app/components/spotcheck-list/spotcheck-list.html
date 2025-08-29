@@ -2,10 +2,9 @@
 <ul>
 @for(spotcheck of spotcheckService.spotcheckListSig();track spotcheck.id){
   <li>
-    {{ spotcheck.department }}
-    {{ spotcheck.health_area }}
-    {{ spotcheck.ou_level }}
-    {{ spotcheck.sections.length }}
+    {{ spotcheck.department }},
+    {{ spotcheck.health_area }},
+    {{ spotcheck.ou_level }}, |
     @for(section of spotcheck.sections; track section.id){
       <li>
         {{ section.title }}

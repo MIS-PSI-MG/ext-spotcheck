@@ -1,10 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { SptState } from '../../services/spt-state';
 import { SptFb } from '../../services/spt-fb';
+import { Observable } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-spotcheck-list',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './spotcheck-list.html',
   styleUrl: './spotcheck-list.scss',
 })
@@ -13,6 +15,8 @@ export class SpotcheckList implements OnInit {
   spotcheckFb = inject(SptFb);
 
   ngOnInit(): void {
-    this.spotcheckFb.getSpotchecks().subscribe((sp) => console.log(sp));
+    this.spotcheckFb.getSpotchecks().subscribe((data) => {
+      this.spotcheckService.spotcheckListSig.set(data);
+    });
   }
 }
