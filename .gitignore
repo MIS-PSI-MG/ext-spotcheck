@@ -47,4 +47,4 @@ Thumbs.db
 .runtimeconfig.json
 
 # Angular
-/environments
+/src/environments/*.ts
